@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0; /* Utilisez left: 0 au lieu de right: 0 pour une meilleure compatibilité */
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Correction de la valeur */
+    padding: 15px 5%; /* Ajustement du padding pour plus de flexibilité */
+}
+
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.mouse-glow {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(247, 1, 255, 0.4) 10%, transparent 100%);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    filter: blur(15px);
+}
+
+.hero-text-d h1 {
+    font-family: "Sigmar", cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin-top: 140px;
+}
+
+.hero-text-s h1 {
+    font-family: "Sigmar", cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin-top: 140px;
+}
+
+body {
+    background: url(Seresty.png);
+    background-size: cover;
+    background-position-x: left;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2;
+    }
+    .icons{
+        padding: 0 3;
+        transition: .2s;
+
+    }
+    .scroll-down {
+        right: 3%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1340px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h1 {
+        font-size: 75px;
+        margin: 0 0 30 px;
+    }
+    .hero-text h5{
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .hero-text{
+        padding-top: 115px;
+    }
+    .hero-img img {
+        width: 560px;
+        height: auto;
+    }
+    .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .icons {
+        display: none;
+    }
+    .scroll-down{
+        display: none;
+    }
+}
+
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        display: block;
+        margin-left: 0;
+        margin: 7x 0;
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+    @media (max-width: 680px){
+        .hero-img img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    
+    .service-card {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        margin: 20px 0;
+        padding-bottom: 20px; /* Ajoute un espace en bas de la carte */
+    }
+    
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .service-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    
+    .service-card h3 {
+        margin: 20px 0 10px;
+        font-size: 1.75rem;
+        color: #9c0ab3;
+        font-weight: 600;
+    }
+    
+    .clair-button {
+        background-color: #9c0ab3;
+        color: white;
+        border: none;
+        border-radius: 100px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 15px; /* Ajuste la marge supérieure du bouton */
+    }
+    
+    .clair-button:hover {
+        background-color: #dd8de7;
+    }
+    
+    
