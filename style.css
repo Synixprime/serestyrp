@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -16,12 +16,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 33px 9%;
+    padding: 2rem 5%;
     background: transparent;
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 700;
     color: white;
 }
@@ -29,21 +29,23 @@ header {
 .navlist {
     display: flex;
 }
-.navlist a{
+
+.navlist a {
     color: white;
-    margin-left: 60px;
-    font-size: 15px;
+    margin-left: 4rem;
+    font-size: 1rem;
     font-weight: 600;
     border-bottom: 2px solid transparent;
     transition: all .55s ease;
 }
-.navlist a:hover{
+
+.navlist a:hover {
     border-bottom: 2px solid white;
 }
 
 #menu-icon {
     color: white;
-    font-size: 35px;
+    font-size: 2.2rem;
     z-index: 10001;
     cursor: pointer;
     display: none;
@@ -64,8 +66,8 @@ header {
 
 .mouse-glow {
     position: fixed;
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     background: radial-gradient(circle, rgba(247, 1, 255, 0.4) 10%, transparent 100%);
     border-radius: 50%;
     pointer-events: none;
@@ -79,64 +81,66 @@ header {
 }
 
 .hero-m {
-    height: 100vh; /* Pleine hauteur de l'écran */
+    height: 100vh;
     width: 100%;
     background: url(Seresty.png);
     background-size: cover;
     background-position: center;
     position: relative;
     display: flex;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     width: 80%;
     max-width: 1200px;
 }
 
 .block {
-    background: white; /* Juste pour voir les blocs */
-    padding: 20px;
-    border-radius: 10px;
+    background: white;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
     display: flex;
-    align-items: center; /* Aligner le contenu verticalement */
-    justify-content: center; /* Centrer le texte */
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    min-height: 300px; /* Assure une hauteur égale*/
+    min-height: 18.75rem;
 }
 
 .hero-img img {
-    width: 120%;
-    border-radius: 20px;
+    width: 100%;
+    border-radius: 1.25rem;
 }
+
 section {
-    padding: 0 19%;
+    padding: 0 12%;
 }
 
 .hero-text h5 {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     color: white;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .hero-text h1 {
     font-family: "Sigmar", cursive;
-    font-size: 90px;
+    font-size: 5.625rem;
     line-height: 1;
     color: white;
-    margin: 0 0 45px;
+    margin: 0 0 2.8125rem;
 }
+
 .hero-text-d h1 {
     font-family: "Sigmar", cursive;
-    font-size: 90px;
+    font-size: 5.625rem;
     line-height: 1;
     color: white;
-    margin-top: 140px;
+    margin-top: 8.75rem;
 }
 
 .hero-m h1 {
@@ -144,24 +148,24 @@ section {
     align-items: center;
     justify-content: center;
     font-family: "Sigmar", cursive;
-    font-size: 90px;
+    font-size: 5.625rem;
     line-height: 1;
     color: white;
-    margin: 0 0 45px;
+    margin: 0 0 2.8125rem;
 }
 
 .hero-text h4 {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .hero-text p {
     color: white;
-    font-size: 15px;
-    line-height: 1,9;
-    margin-bottom: 40px;
+    font-size: 0.9375rem;
+    line-height: 1.9;
+    margin-bottom: 2.5rem;
 }
 
 .hero-text a {
@@ -169,36 +173,38 @@ section {
     color: white;
     background: #6306dd;
     border: 1px solid transparent;
-    padding: 12px 30px;
-    line-height: 1,4;
-    font-size: 14px;
+    padding: 0.75rem 1.875rem;
+    line-height: 1.4;
+    font-size: 0.875rem;
     font-weight: 500;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     text-transform: uppercase;
     transition: all .55s ease;
 }
+
 .hero-text a:hover {
     background: transparent;
     border: 1px solid white;
-    transform: translateX(8px);
+    transform: translateX(0.5rem);
 }
 
 .hero-text a.ctaa {
     background: transparent;
     border: 1px solid;
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
+
 .hero-text a.ctaa:hover {
     background: #6306dd;
     border: 1px solid #6306dd;
     margin: 0;
 }
+
 .hero-text a.ctaa i {
     vertical-align: middle;
-    margin-right: 5px;
+    margin-right: 0.3125rem;
 }
 
-/* styles.css */
 body {
     background: #6A0DAD;
     font-family: Arial, sans-serif;
@@ -207,201 +213,213 @@ body {
 }
 
 .entreprises {
-    padding: 20px;
+    padding: 1.25rem;
+    text-align: center;
 }
 
 h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    max-width: 900px;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    max-width: 90%;
     margin: 0 auto;
 }
 
 .card {
     background-size: cover;
     background-position: center;
-    height: 150px;
+    height: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     text-transform: uppercase;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
+    text-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.8);
+    border-radius: 0.625rem;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0.3125rem 0.9375rem rgba(255, 255, 255, 0.3);
+}
+
+
+@media (max-width: 42.5rem) {
+    .card {
+        height: 8rem;
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
 }
 
 .icons {
     position: absolute;
     top: 50%;
-    padding: 0 9%;
+    padding: 0 5.625rem;
     transform: translateY(-50%);
 }
 
 .icons i {
     display: block;
-    margin: 26px 0;
-    font-size: 24px;
+    margin: 1.625rem 0;
+    font-size: 1.5rem;
     transition: all .50s linear;
     color: white;
 }
 
 .icons i:hover {
     color: #6306dd;
-    transform: translateY(-5px);
+    transform: translateY(-0.3125rem);
 }
 
 .scroll-down {
     position: absolute;
     bottom: 6%;
-    right: 9%;
+    right: 5.625rem;
 }
 
 .scroll-down i {
     display: block;
-    padding: 12px;
-    font-size: 25px;
+    padding: 0.75rem;
+    font-size: 1.5625rem;
     color: white;
     background: #a414b8;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     transition: all .50s ease;
 }
 
 .scroll-down i:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.3125rem);
 }
 
-@media (max-width: 1535px){
-    header{
-        padding: 15px 3%;
-        transition: .2;
-    }
-    .icons{
-        padding: 0 3;
+@media (max-width: 95.3125rem) {
+    header {
+        padding: 0.9375rem 1.875rem;
         transition: .2s;
-
+    }
+    .icons {
+        padding: 0 1.875rem;
+        transition: .2s;
     }
     .scroll-down {
-        right: 3%;
+        right: 1.875rem;
         transition: .2s;
     }
 }
-@media (max-width: 1460px){
-    section{
-        padding: 0 12%;
+
+@media (max-width: 91.25rem) {
+    section {
+        padding: 0 7.5rem;
         transition: .2s;
     }
 }
-@media (max-width: 1340px){
-    .hero-img img{
+
+@media (max-width: 83.75rem) {
+    .hero-img img {
         width: 100%;
         height: auto;
     }
     .hero-text h1 {
-        font-size: 75px;
-        margin: 0 0 30 px;
+        font-size: 4.6875rem;
+        margin: 0 0 1.875rem;
     }
-    .hero-text h5{
-        margin-bottom: 25px;
+    .hero-text h5 {
+        margin-bottom: 1.5625rem;
     }
 }
-@media (max-width: 1195px){
-    section{
-        padding: 0 3%;
+
+@media (max-width: 74.6875rem) {
+    section {
+        padding: 0 1.875rem;
         transition: .2s;
     }
-    .hero-text{
-        padding-top: 115px;
+    .hero-text {
+        padding-top: 7.1875rem;
     }
     .hero-img img {
-        width: 560px;
+        width: 35rem;
         height: auto;
     }
-    .hero{
+    .hero {
         height: 100%;
-        gap: 1rem;
+        gap: 0.625rem;
         grid-template-columns: 1fr;
     }
     .icons {
         display: none;
     }
-    .scroll-down{
+    .scroll-down {
         display: none;
     }
 }
 
-@media (max-width: 990px){
-    #menu-icon{
+@media (max-width: 61.875rem) {
+    #menu-icon {
         display: block;
     }
-    .navlist{
+    .navlist {
         position: absolute;
         top: 100%;
         right: -100%;
-        width: 300px;
+        width: 18.75rem;
         height: 40vh;
         background: transparent;
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding: 50px 20px;
+        padding: 3.125rem 1.25rem;
         transition: all .55s ease;
     }
-    .navlist a{
+    .navlist a {
         display: block;
         margin-left: 0;
-        margin: 7x 0;
+        margin: 0.4375rem 0;
     }
-    .navlist.open{
+    .navlist.open {
         right: 0;
     }
 }
 
-@media (max-width: 680px){
+@media (max-width: 42.5rem) {
     .hero, .hero-content {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 0.625rem;
     }
-
     .hero-text h1 {
-        font-size: 50px;
-        margin: 0 0 20px;
+        font-size: 3.125rem;
+        margin: 0 0 1.25rem;
     }
-
     .hero-text h5, .hero-text p {
-        font-size: 14px;
-        margin-bottom: 20px;
+        font-size: 0.875rem;
+        margin-bottom: 1.25rem;
     }
-
     .hero-text a {
-        font-size: 12px;
-        padding: 10px 20px;
+        font-size: 0.75rem;
+        padding: 0.625rem 1.25rem;
     }
-
     .navlist a {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
-
     .grid {
         grid-template-columns: 1fr;
     }
-
-    .service-card h3 {
-        font-size: 1.2rem;
+    .card {
+        height: 8rem;
+        font-size: 1rem;
     }
-
+    h2 {
+        font-size: 1.5rem;
+    }
     .hero-img img {
         width: 100%;
         height: auto;
@@ -410,10 +428,10 @@ h2 {
 
 .services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: 1.25rem;
+    padding: 1.25rem;
+    max-width: 75rem;
     width: 100%;
     margin: 0 auto;
     justify-content: center;
@@ -421,26 +439,26 @@ h2 {
 
 .service-card {
     background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-0.625rem);
+    box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.2);
 }
 
 .service-card img {
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
     object-fit: cover;
 }
 
 .service-card h3 {
-    margin: 15px 0 10px;
+    margin: 0.9375rem 0 0.625rem;
     font-size: 1.5rem;
     color: #5e0a6e;
 }
